@@ -16,7 +16,7 @@ import java.math.RoundingMode;
 import static java.lang.Math.abs;
 
 /**
- *
+ * Last Edit: 9th of January, 2017
  * @author Rowan Knobel
  */
 public class JTrack_plugin implements PlugIn {
