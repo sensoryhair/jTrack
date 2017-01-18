@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>net.imagej</groupId>
+		<artifactId>pom-imagej</artifactId>
+		<version>16.6.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>jtrack</groupId>
+	<artifactId>JTrack_plugin</artifactId>
+	<version>1.0.0</version>
+
+	<name>jTrack</name>
+	<description>A plugin that detects and tracks the body of a subject in a sequence of images.</description>
+
+	<developers>
+		<developer>
+			<name>Rowan Knobel</name>
+			<email>r.knobel@neurophysiology.nl</email>
+			<organization>Donders Institute</organization>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
+
+	<properties>
+		<main-class>Process_Pixels</main-class>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>JTrack_plugin</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
